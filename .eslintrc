@@ -12,5 +12,11 @@
     "plugin:@typescript-eslint/eslint-recommended",
     "plugin:@typescript-eslint/recommended",
     "airbnb-base"
-  ]
+  ],
+  "rules": {
+    "no-console": "off",
+    "quotes": ["error", "double"],
+    "space-in-parens": ["error", "always"],
+    "array-bracket-spacing": [ "error", "always" ],
+  }
 }

@@ -1,31 +1,31 @@
-const o = { foo: 'bar' };
-console.log(o);
+const o = { foo: "bar" };
+console.log( o );
 
 const bag = {
-  fruit: 'apple',
-  vegetable: 'carrot',
-  grain: 'rice',
+  fruit: "apple",
+  vegetable: "carrot",
+  grain: "rice",
 };
-console.log('bag', bag);
+console.log( "bag", bag );
 
-const letters = ['a', 'b', 'c'];
-console.log(letters);
+const letters = [ "a", "b", "c" ];
+console.log( letters );
 
 const fruitFoods = [
-  'apple juice',
-  'orange marmalade',
-  'pear tart',
-  'grape crush',
-  'pinot colada',
+  "apple juice",
+  "orange marmalade",
+  "pear tart",
+  "grape crush",
+  "pinot colada",
 ];
-console.log('fruitFoods', fruitFoods);
+console.log( "fruitFoods", fruitFoods );
 
-function sayMyName(name: string): void {
-  if (name === 'Heisenberg') {
-    console.log("You're right 👍");
+function sayMyName( name: string ): void {
+  if ( name === "Heisenberg" ) {
+    console.log( "You're right 👍" );
   } else {
-    console.log("You're wrong 👎");
+    console.log( "You're wrong 👎" );
   }
 }
 
-sayMyName('Heisenberg');
+sayMyName( "Heisenberg" );
