@@ -1,5 +1,15 @@
-const bag = { fruit: 'apple', vegetable: 'carrot' };
+const o = { foo: 'bar' };
+console.log(o);
+
+const bag = {
+  fruit: 'apple',
+  vegetable: 'carrot',
+  grain: 'rice',
+};
 console.log('bag', bag);
+
+const letters = ['a', 'b', 'c'];
+console.log(letters);
 
 const fruitFoods = [
   'apple juice',
