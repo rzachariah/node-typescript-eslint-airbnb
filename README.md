@@ -5,3 +5,77 @@ Boilerplate node typescript project with eslint and airbnb config. Contains mino
 ## What is this?
 
 This is a boilerplate nodejs typescript project that uses eslint with airbnb config for linting and formatting. The eslint config contains some overrides to introduce comfy spaces.
+
+## Steps to reproduce
+
+Create node project.
+
+```
+npm init -y
+```
+
+Install typescript and Node ambient types.
+
+```
+npm install typescript @types/node --save-dev
+```
+
+Create typescript config
+
+```
+npx tsc --init
+```
+
+Install eslint
+
+```
+npm i --save-dev eslint @typescript-eslint/parser @typescript-eslint/eslint-plugin
+```
+
+Create eslint config.
+
+```
+npx eslint --init
+```
+
+Install airbnb-base config.
+
+```
+npx install-peerdeps --dev eslint-config-airbnb-base
+```
+
+Add `airbnb-base` to `.eslintrc`.
+
+```
+  "extends": [
+    "eslint:recommended",
+    "plugin:@typescript-eslint/recommended",
+    "airbnb-base"
+  ],
+```
+
+Add custom eslint rules.
+
+```
+  "rules": {
+    "no-console": "off",
+    "quotes": ["error", "double"],
+    "space-in-parens": ["error", "always"],
+    "array-bracket-spacing": [ "error", "always" ],
+  }
+```
+
+Add VSCode integration
+
+```
+{
+  "editor.tabSize": 2,
+  "eslint.format.enable": true,
+  "eslint.validate": ["javascript", "typescript"],
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true
+  },
+  "editor.formatOnPaste": true,
+  "editor.formatOnSave": true
+}
+```
